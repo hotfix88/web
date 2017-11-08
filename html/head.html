@@ -1,11 +1,90 @@
+<!DOCTYPE html>
 <!
 /**
  * Author:      fyso@163.com fengyangsgs@js.chinamobile.com
  * DateTime:    2017-11-06 23:03:24
- * Description: Description
+ * Description: head  定义关于文档的信息。
  */
 
   head   元素是所有头部元素的容器。<head  内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。
 以下标签都可以添加到 head 部分： title  base <link <meta <script 以及 <style 
 >
+
+<!
+ head 	定义关于文档的信息。
+ title 定义文档标题。
+ base 	定义页面上所有链接的默认地址或默认目标。
+ link 	定义文档与外部资源之间的关系。
+ meta 	定义关于 HTML 文档的元数据。
+ script 	定义客户端脚本。
+ style 	定义文档的样式信息。
+>
+
+<html>
+<head>
+
+<title>Title of the head</title>
+<!title 元素能够：
+定义浏览器工具栏中的标题
+提供页面被添加到收藏夹时显示的标题
+显示在搜索引擎结果中的页面标题>
+
+
+<base href="http://www.w3school.com.cn/images/" />
+<base target="_blank" />
+<! base  标签为页面上的所有链接规定默认地址或默认目标（target）：>
+
+
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<!标签定义文档与外部资源之间的关系,标签最常用于连接样式表 >
+
+
+<style type="text/css">
+body {background-color:yellow}
+p {color:blue}
+</style>
+<!标签用于为 HTML 文档定义样式信息.您可以在 style 元素内规定 HTML 元素在浏览器中呈现的样式>
+
+<!下面的 meta 元素定义页面的描述>
+<meta name="description" content="Free Web tutorials on HTML, CSS, XML" />
+<!下面的 meta 元素定义页面的关键词>
+<meta name="keywords" content="HTML, CSS, XML" />
+
+
+
+<!script 标签用于定义客户端脚本，比如 JavaScript。我们会在稍后的章节讲解 script 元素。> 
+
+</head>
+
+
+
+
+<body>
+The content of the document......
+&lt
+&#60&#61&#62
+&nbsp&nbsp&nbsp&#62
+</body>
+<!  
+
+显示结果	描述	实体名称	实体编号
+ 	空格	&nbsp;	&#160;
+ 	小于号	&lt;	&#60;
+ 	大于号	&gt;	&#62;
+&	和号	&amp;	&#38;
+"	引号	&quot;	&#34;
+'	撇号 	&apos; (IE不支持)	&#39;
+￠	分（cent）	&cent;	&#162;
+£	镑（pound）	&pound;	&#163;
+¥	元（yen）	&yen;	&#165;
+€	欧元（euro）	&euro;	&#8364;
+§	小节	&sect;	&#167;
+©	版权（copyright）	&copy;	&#169;
+®	注册商标	&reg;	&#174;
+™	商标	&trade;	&#8482;
+×	乘号	&times;	&#215;
+÷	除号	&divide;	&#247;
+ >
+
+</html>
 

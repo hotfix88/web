@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!
+/**
+ * Author:      fyso@163.com fengyangsgs@js.chinamobile.com
+ * DateTime:    2017-11-11 17:08:47
+ * Description: Description
+ */>
+<html>
+<body>
+
+
+<!线条>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+  <!其中的javascript>
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.moveTo(10,10);
+cxt.lineTo(180,50);
+cxt.lineTo(10,50);
+cxt.stroke();
+</script>
+
+
+<!圆形>
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+ <!其中的javascript>
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas2");
+var cxt=c.getContext("2d");
+cxt.fillStyle="#FF0000";
+cxt.beginPath();
+cxt.arc(70,18,15,0,Math.PI*2,true);
+cxt.closePath();
+cxt.fill();
+
+</script>
+
+
+<!渐变>
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas3");
+var cxt=c.getContext("2d");
+var grd=cxt.createLinearGradient(0,0,175,50);
+grd.addColorStop(0,"#FF0000");
+grd.addColorStop(1,"#00FF00");
+cxt.fillStyle=grd;
+cxt.fillRect(0,0,175,50);
+
+</script>
+
+<br/>
+
+<!图像>
+<canvas id="myCanvas4" width="200" height="200" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas4");
+var cxt=c.getContext("2d");
+var img=new Image()
+img.src="flower.png"
+cxt.drawImage(img,0,0);
+
+</script>
+
+</body>
+</html>
